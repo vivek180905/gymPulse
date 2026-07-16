@@ -3,20 +3,20 @@ import { Shield, ArrowRight, Download } from 'lucide-react';
 
 export default function FinancialTracker({ members }) {
   // Calculate simple analytics
-  const totalRevenue = 14250;
+  const totalRevenue = 450000;
   const pendingPayments = [
-    { id: 'P-101', name: 'Emily Watson', amount: '$49.00', due: 'Overdue 5 days', plan: 'Basic' },
-    { id: 'P-102', name: 'Marcus Aurelius', amount: '$120.00', due: 'Overdue 2 days', plan: 'VIP Elite' },
+    { id: 'P-101', name: 'Ananya Gupta', amount: '₹1,500', due: 'Overdue 5 days', plan: 'Basic' },
+    { id: 'P-102', name: 'Vikram Singh', amount: '₹3,500', due: 'Overdue 2 days', plan: 'VIP Elite' },
   ];
 
   // Custom SVG Chart Data points (Revenue over last 6 months)
   const chartData = [
-    { month: 'Jan', revenue: 9800, height: 110 },
-    { month: 'Feb', revenue: 11200, height: 130 },
-    { month: 'Mar', revenue: 10500, height: 120 },
-    { month: 'Apr', revenue: 12800, height: 150 },
-    { month: 'May', revenue: 13900, height: 170 },
-    { month: 'Jun', revenue: 14250, height: 180 },
+    { month: 'Jan', revenue: 350000, height: 110 },
+    { month: 'Feb', revenue: 380000, height: 130 },
+    { month: 'Mar', revenue: 360000, height: 120 },
+    { month: 'Apr', revenue: 410000, height: 150 },
+    { month: 'May', revenue: 440000, height: 170 },
+    { month: 'Jun', revenue: 450000, height: 180 },
   ];
 
   return (
@@ -25,17 +25,17 @@ export default function FinancialTracker({ members }) {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6">
           <span className="text-xs text-slate-400 font-bold uppercase tracking-wider">Total Monthly Revenue</span>
-          <h3 className="text-3xl font-black text-white mt-2">$14,250.00</h3>
+          <h3 className="text-3xl font-black text-white mt-2">₹4,50,000</h3>
           <p className="text-xs text-emerald-400 font-semibold mt-2">⚡ +14% compared to last month</p>
         </div>
         <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6">
           <span className="text-xs text-slate-400 font-bold uppercase tracking-wider">Outstanding Receivables</span>
-          <h3 className="text-3xl font-black text-rose-400 mt-2">$169.00</h3>
+          <h3 className="text-3xl font-black text-rose-400 mt-2">₹5,000</h3>
           <p className="text-xs text-slate-400 font-semibold mt-2">2 pending member payments</p>
         </div>
         <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6">
           <span className="text-xs text-slate-400 font-bold uppercase tracking-wider">Average Revenue Per User</span>
-          <h3 className="text-3xl font-black text-white mt-2">$85.50</h3>
+          <h3 className="text-3xl font-black text-white mt-2">₹2,500</h3>
           <p className="text-xs text-emerald-400 font-semibold mt-2">VIP Elite plan driving growth</p>
         </div>
       </div>
@@ -60,7 +60,7 @@ export default function FinancialTracker({ members }) {
             {chartData.map((data, idx) => (
               <div key={idx} className="flex-1 flex flex-col items-center gap-2 group h-full justify-end">
                 <div className="text-[10px] font-bold text-emerald-400 opacity-0 group-hover:opacity-100 transition-opacity mb-1">
-                  ${data.revenue}
+                  ₹{data.revenue.toLocaleString('en-IN')}
                 </div>
                 <div 
                   style={{ height: `${data.height}px` }}

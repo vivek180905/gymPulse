@@ -9,11 +9,11 @@ import TrainerDirectory from './components/TrainerDirectory';
 
 // Initial Mock Data
 const initialMembers = [
-  { id: 'M-101', name: 'Arjun Sharma', email: 'arjun@example.com', phone: '(91) 98765-43210', plan: 'VIP Elite', status: 'Active', checkInTime: '08:15 AM', photo: 'https://images.unsplash.com/photo-1620247526019-95e2f7b88df6?w=150' },
-  { id: 'M-102', name: 'Priya Patel', email: 'priya.p@example.com', phone: '(91) 87654-32109', plan: 'Standard', status: 'Active', checkInTime: '09:30 AM', photo: 'https://images.unsplash.com/photo-1549646549-39906d4e5f22?w=150' },
-  { id: 'M-103', name: 'Vikram Singh', email: 'vikram@example.com', phone: '(91) 76543-21098', plan: 'VIP Elite', status: 'Suspended', checkInTime: null, photo: 'https://images.unsplash.com/photo-1624641885686-3023e7f41cf6?w=150' },
-  { id: 'M-104', name: 'Ananya Gupta', email: 'ananya.g@example.com', phone: '(91) 65432-10987', plan: 'Basic', status: 'Expired', checkInTime: null, photo: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?w=150' },
-  { id: 'M-105', name: 'Rahul Desai', email: 'rahul.d@example.com', phone: '(91) 54321-09876', plan: 'Standard', status: 'Active', checkInTime: '10:05 AM', photo: 'https://images.unsplash.com/photo-1582298687796-0158dfb642ec?w=150' }
+  { id: 'M-101', name: 'Arjun Sharma', email: 'arjun@example.com', phone: '(91) 98765-43210', plan: 'VIP Elite', status: 'Active', checkInTime: '08:15 AM', photo: 'https://randomuser.me/api/portraits/men/73.jpg' },
+  { id: 'M-102', name: 'Priya Patel', email: 'priya.p@example.com', phone: '(91) 87654-32109', plan: 'Standard', status: 'Active', checkInTime: '09:30 AM', photo: 'https://randomuser.me/api/portraits/women/65.jpg' },
+  { id: 'M-103', name: 'Vikram Singh', email: 'vikram@example.com', phone: '(91) 76543-21098', plan: 'VIP Elite', status: 'Suspended', checkInTime: null, photo: 'https://randomuser.me/api/portraits/men/53.jpg' },
+  { id: 'M-104', name: 'Ananya Gupta', email: 'ananya.g@example.com', phone: '(91) 65432-10987', plan: 'Basic', status: 'Expired', checkInTime: null, photo: 'https://randomuser.me/api/portraits/women/12.jpg' },
+  { id: 'M-105', name: 'Rahul Desai', email: 'rahul.d@example.com', phone: '(91) 54321-09876', plan: 'Standard', status: 'Active', checkInTime: '10:05 AM', photo: 'https://randomuser.me/api/portraits/men/44.jpg' }
 ];
 
 const initialClasses = [
@@ -25,9 +25,9 @@ const initialClasses = [
 ];
 
 const initialTrainers = [
-  { id: 'T-1', name: 'Coach Rajesh', specialty: 'Olympic Lifting & CrossFit', rating: 4.9, clients: 18, status: 'On-duty', photo: 'https://images.unsplash.com/photo-1601053075276-805c879d750c?w=150' },
-  { id: 'T-2', name: 'Sneha Reddy', specialty: 'Yoga & Pilates Specialist', rating: 4.8, clients: 12, status: 'On-duty', photo: 'https://images.unsplash.com/photo-1606334645229-2d0eb5f4882e?w=150' },
-  { id: 'T-3', name: 'Karan Malhotra', specialty: 'HIIT & Athletic Conditioning', rating: 4.7, clients: 22, status: 'Off-duty', photo: 'https://images.unsplash.com/photo-1599839619722-39751411ea63?w=150' }
+  { id: 'T-1', name: 'Coach Rajesh', specialty: 'Olympic Lifting & CrossFit', rating: 4.9, clients: 18, status: 'On-duty', photo: 'https://randomuser.me/api/portraits/men/32.jpg' },
+  { id: 'T-2', name: 'Sneha Reddy', specialty: 'Yoga & Pilates Specialist', rating: 4.8, clients: 12, status: 'On-duty', photo: 'https://randomuser.me/api/portraits/women/40.jpg' },
+  { id: 'T-3', name: 'Karan Malhotra', specialty: 'HIIT & Athletic Conditioning', rating: 4.7, clients: 22, status: 'Off-duty', photo: 'https://randomuser.me/api/portraits/men/60.jpg' }
 ];
 
 export default function App() { 

@@ -89,14 +89,14 @@ export default function DashboardOverview({ members, classes, trainers, onCheckI
           <div className="flex justify-between items-start">
             <div className="space-y-2">
               <span className="text-xs text-slate-400 font-bold uppercase tracking-wider">Monthly Revenue</span>
-              <h4 className="text-3xl font-black text-white group-hover:text-emerald-400 transition-colors">$14,250</h4>
+              <h4 className="text-3xl font-black text-white group-hover:text-emerald-400 transition-colors">₹4,50,000</h4>
             </div>
             <div className="bg-emerald-500/10 text-emerald-400 p-3 rounded-xl">
               <Shield className="w-6 h-6" />
             </div>
           </div>
           <div className="mt-4 flex items-center gap-1.5 text-xs text-emerald-400 font-semibold">
-            <span>Target: $15,000 (95%)</span>
+            <span>Target: ₹5,00,000 (90%)</span>
           </div>
         </div>
 

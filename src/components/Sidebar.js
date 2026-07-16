@@ -53,12 +53,12 @@ export default function Sidebar({ activeTab, setActiveTab }) {
       <div className="p-4 border-t border-slate-800 bg-slate-950/50">
         <div className="flex items-center gap-3 p-2">
           <img
-            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100"
+            src="https://randomuser.me/api/portraits/men/75.jpg"
             alt="Admin"
             className="w-10 h-10 rounded-full border-2 border-emerald-500 object-cover"
           />
           <div>
-            <h4 className="text-sm font-bold text-white">Marcus Brody</h4>
+            <h4 className="text-sm font-bold text-white">Amit Singh</h4>
             <p className="text-xs text-emerald-400 font-medium">General Manager ⚡</p>
           </div>
         </div>
